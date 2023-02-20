@@ -7,3 +7,5 @@
 3. RanK_IC 其实是Spearman_rho相关系数，可以直接一行代码就搞定了
 4. 为什么因子暴露的ICIR是需要和eps作相关系数呢
 
+## 补充代码问题
+1. dataloading--get_fundamental_data中data.rename(columns={column: column.split('.')[0]}, inplace=True)，如果是要把“(申万)"删掉，应为column.split('(')
